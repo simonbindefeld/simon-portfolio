@@ -157,17 +157,17 @@ export default function Container(props: {
 
       <div className={styles.footer}>
         <div>
-          <IconButton aria-label='facebook'>
-            <img src={Facebook} alt='social media' />
-          </IconButton>
+          {/* <IconButton aria-label='facebook'>
+            <img src={Facebook} onClick={()=>(window.open('https://google.com'))} alt='social media' />
+          </IconButton> */}
           <IconButton aria-label='instagram'>
-            <img src={Instagram} alt='social media' />
+            <img onClick={()=>(window.open('https://instagram.com/simonbb.eth'))} src={Instagram} alt='social media' />
           </IconButton>
           <IconButton aria-label='twitter'>
-            <img src={Twitter} alt='social media' />
+            <img onClick={()=>(window.open('https://twitter.com/simon_rice_'))} src={Twitter} alt='social media' />
           </IconButton>
           <IconButton aria-label='linkedIn'>
-            <img src={LinkedIn} alt='social media' />
+            <img onClick={()=>{window.open('https://www.linkedin.com/in/simon-boccara-8904ab17b')}} src={LinkedIn} alt='social media' />
           </IconButton>
         </div>
         <div>

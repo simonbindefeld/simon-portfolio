@@ -31,11 +31,7 @@ export default function WorkCard(props: any) {
           <span>{props.type}</span>
         </div>
         <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui
-          deserunt nulla mollitia eaque accusantium aut saepe non quis beatae!
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, et!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          fugiat provident
+          {props.text}
         </span>
       </div>
     </Card>

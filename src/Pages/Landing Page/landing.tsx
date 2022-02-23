@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import WorkCard from "../../utils/Works Card/card";
 import styles from "./landing.module.scss";
+import slothImg from './simonSloth.jpg';
 
 const postsCardData = [
-  { heading: "Making a design system from scratch", type: "Design, Pattern" },
+  { heading: "Smart Contract Parameters", type: "Blockchain Development" },
   {
-    heading: "Creating pixel perfect icons in Figma",
-    type: "Figma, Icon Design",
+    heading: "Integration with Web3",
+    type: "Web3 Development",
   },
 ];
 
@@ -37,7 +38,7 @@ const featureWorksData = [
 
 export default function Landing() {
   const devImg =
-    "https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+    "./simonSloth.jpg'";
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -49,21 +50,26 @@ export default function Landing() {
         <div className={styles.headerContainer}>
           <div className={styles.headerTextImg}>
             <div className={styles.devImg_BelowTablet}>
-              <img src={devImg} alt='developer' />
+              <img src={slothImg} alt='developer' />
             </div>
             <div className={styles.headerText}>
               <h4>
-                Hi, I am John,
-                <br /> Creative Technologist
+                Hi, I'm Simon Boccara
+                <br /> {'Web3 & Blockchain Developer'}
               </h4>
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                
+                <ul>
+                  <li>Smart Contracts</li>
+                  <li>Web 3 Integration</li>
+                  <li>API Creation</li>
+                  <li>2D and 3D Image Generation</li>
+                  <li>Discord Structure</li>
+                </ul>
               </p>
             </div>
             <div className={styles.devImg_UptoTablet}>
-              <img src={devImg} alt='developer' />
+              <img src={'https://ipfs.io/ipfs/QmNqSS4ph4xqQEeYXJBEFVdmMk6LizzxpQhZg8Y4EEbBtr/1358.png'} alt='developer' />
             </div>
           </div>
           <div>
@@ -113,9 +119,10 @@ export default function Landing() {
                     <span>{details.heading}</span>
                     <span>12 Feb 2020 | {details.type}</span>
                     <span>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Aliquam eum reiciendis sint! Officia fuga rem iure commodi
-                      dolore maiores nobis!
+                      Smart Contracts are what permit a user to 
+                      create various types of tokens on the Ethereum network.
+                      Popular token standards are ERC-20 (currencies) , ERC-1155 (in game NFTs), and ERC-721 (NFTs).
+                      
                     </span>
                   </Card>
                 </Grid>

@@ -13,10 +13,13 @@ interface Props {
   img: string;
   heading: string;
   type: string;
+  topics: Array<string>;
+
+
 }
-export default function WorkCard(props: any) {
+export default function WorkCard(props: any,) {
   return (
-    <Card className={styles.card} elevation={0}>
+    <Card className={styles.card} style={{overflow:'auto'}} elevation={0}>
       <motion.img
         variants={imageVariant}
         transition={transition}
@@ -32,7 +35,9 @@ export default function WorkCard(props: any) {
         </div>
         <span>
           {props.text}
+     
         </span>
+        {props.topics && props.topics.map((topic : string)=>{console.log("props.topics=",props.topics); return(<ul><li>{topic}</li></ul>)})}
       </div>
     </Card>
   );
